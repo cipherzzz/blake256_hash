@@ -1,4 +1,4 @@
-from hash import blake
+from blake import BLAKE
 
 testVectors = [
     ["716f6e863f744b9ac22c97ec7b76ea5f5908bc5b2f67c61510bfc4751384ea7a", ""],
@@ -34,4 +34,4 @@ testVectors = [
     ["2e0eff918940b01eea9539a02212f33ee84f77fab201f4287aa6167e4a1ed043", "How can you write a big system without C++?  -Paul Glick"]]
 
 for vectorSet in testVectors:
-    assert vectorSet[0] == blake.BLAKE(256).digest(vectorSet[1]).hex()
+    assert vectorSet[0] == BLAKE(256).digest(vectorSet[1]).hex()
