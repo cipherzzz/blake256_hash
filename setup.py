@@ -7,7 +7,7 @@ setup(
     description="A Python module supporting blake256 hashing",
     license="MIT",
     author="cipherZ",
-    packages=["blake256_hash"],
+    packages=find_packages(),
     url="https://github.com/cipherzzz/blake256_hash",
     classifiers=[
         "Programming Language :: Python",
