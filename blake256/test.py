@@ -1,4 +1,4 @@
-from blake256 import blake256
+from blake256 import blake_hash
 
 testVectors = [
     ["716f6e863f744b9ac22c97ec7b76ea5f5908bc5b2f67c61510bfc4751384ea7a", ""],
@@ -34,4 +34,4 @@ testVectors = [
     ["2e0eff918940b01eea9539a02212f33ee84f77fab201f4287aa6167e4a1ed043", "How can you write a big system without C++?  -Paul Glick"]]
 
 for vectorSet in testVectors:
-    assert vectorSet[0] == blake256(vectorSet[1]).hex()
+    assert vectorSet[0] == blake_hash(vectorSet[1]).encode('hex')

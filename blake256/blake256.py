@@ -529,5 +529,5 @@ class BLAKE(object):
 #---------------------------------------------------------------
 
 
-def blake256(data):
+def blake_hash(data):
     return BLAKE(256).digest(data)
